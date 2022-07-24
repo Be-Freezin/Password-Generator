@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/b7277f64eb.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section class="main-container">
+      <div class="content-wrapper">
+        <div class="text-wrapper">
+          <h3 class="title">
+            Generate your <span class="accent-text"> password</span>
+          </h3>
+          <h5 class="description">
+            Get a strong password and be confident in your online security.
+          </h5>
+          <button id="generateBtn" class="generate-btn">
+            Generate Passwords
+          </button>
+          
+      
+
+          <label class="toggle">
+            <input 
+            id="symbolsEl"
+            class="toggle-checkbox" type="checkbox">
+            <div class="toggle-switch"></div>
+            <span class="toggle-label">Symbols</span>
+          </label>
+
+          <label class="toggle">
+            <input 
+            id="numberEl"
+            class="toggle-checkbox" type="checkbox" checked>
+            <div class="toggle-switch"></div>
+            <span class="toggle-label">Numbers</span>
+          </label>
+
+        </div>
+
+
+        <div class="password-wrapper">
+          <input class="password-input" id="passwordEl-1" type="text" />
+          <input class="password-input" id="passwordEl-2" type="text" />
+
+          <input class="password-input" id="passwordEl-3" type="text" />
+
+          <input class="password-input" id="passwordEl-4" type="text" />
+        </div>
+      </div>
+    </section>
+
+    <script src="app.js"></script>
+  </body>
+</html>
